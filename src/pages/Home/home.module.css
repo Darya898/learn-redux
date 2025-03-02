@@ -1,0 +1,48 @@
+.header{
+    position: relative;
+}
+.sub-container{
+    color: #fff;
+    text-align: center;
+    margin-top: -60px;
+    z-index: 2;
+    position: relative;
+}
+.sub-container h1{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+}
+.sub-container .sub-description{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--grey-60);
+    max-width: 1096px;
+    margin: 14px auto 0;
+}
+.sub-container__btn{
+    border-radius: 8px;
+    padding: 18px 24px;
+    width: 251px;
+    height: 64px;
+    background: var(--red-45);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--absolute-white);
+    display: flex;
+    align-items: center;
+    margin: 50px auto 0;
+    border: none;
+}
+.sub-container__btn span{
+    margin-left: 4px;
+}
+

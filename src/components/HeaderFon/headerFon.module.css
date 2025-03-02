@@ -1,0 +1,43 @@
+.wrapper{
+
+}
+
+.wrapper-fon{
+    background: url("../../assets/header-img/fon.png");
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.wrapper-fon__top{
+    background: url("../../assets/header-img/Fade_Out_Top.png");
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.wrapper-fon__bottom{
+    background: url("../../assets/header-img/Fade_Out_Bottom.png");
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.wrapper-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.wrapper .wrapper-line:last-child{
+    margin-bottom: 0px;
+}
+.wrapper-fon__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

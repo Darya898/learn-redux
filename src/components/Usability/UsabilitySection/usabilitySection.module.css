@@ -1,0 +1,32 @@
+.usability-heading__title{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 150%;
+    color: var(--absolute-white);
+}
+.usability-heading__description{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--grey-60);
+    margin-top: 14px;
+}
+.usability{
+    margin: 150px auto;
+    max-width: 1597px;
+}
+.usability-content__card-line_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.usability-content__card-line_bottom{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
