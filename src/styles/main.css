@@ -86,8 +86,6 @@
 
 
 :root{
-    max-width: 1920px;
-    margin: 0 auto;
     height: 100%;
     font-family:'Manrope';
     --font-family:'Manrope', sans-serif;
@@ -130,4 +128,20 @@ body {
     background: #141414;
     height: 100%;
 }
+main{
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
 
+@media screen and (min-width: 390px) {
+    main {
+        padding: 0 14px 0 15px;
+    }
+}
+
+@media screen and (max-width: 389px){
+    main{
+       padding: 0 4px;
+    }
+}

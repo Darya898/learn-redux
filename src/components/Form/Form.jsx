@@ -1,15 +1,21 @@
 import  {useState} from 'react';
 import styles from './form.module.css'
+import {useDispatch} from "react-redux";
+import {addQuestion} from "../../store/questionReducer/action.js";
 
 const Form = ({clickOutside}) => {
     const [selectData, setSelectData]=useState('');
     const [reason, setReason]=useState('');
     const [message, setMessage]=useState('');
+    const dispatch=useDispatch();
     const handlerSubmit=(e)=>{
         e.preventDefault();
         if(selectData&&reason){
             clickOutside();
             setMessage('');
+            dispatch(addQuestion(
+                {title:`${selectData}?`,
+                       description:reason}))
 
         }
         else{

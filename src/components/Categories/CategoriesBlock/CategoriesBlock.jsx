@@ -8,14 +8,12 @@ const {title,imagesData}=props;
                 <div className={styles['categories-slides__item_top']}>
                     {imagesData.slice(0,2).map((im,index)=> (
                         <div  key={index} className={styles['item_img']} style={{backgroundImage:`url(${im})`}}>
-                        {/*<img src={im}></img>*/}
                         </div>
                     ))}
                 </div>
                 <div className={styles['categories-slides__item_bottom']}>
                     {imagesData.slice(2).map((im,index)=> (
                         <div key={index} className={styles['item_img']} style={{backgroundImage:`url(${im})`}}>
-                            {/*<img src={im}></img>*/}
                         </div>
                             ))}
                         </div>

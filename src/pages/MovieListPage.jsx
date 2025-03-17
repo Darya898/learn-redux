@@ -10,7 +10,6 @@ const MovieListPage =()=>{
     const [search, setSearch]=useState('');
     const films=useSelector((state)=>state.data.sortFilms);
     const favorites=useSelector(state=>state.data.favorites);
-    console.log("films",films)
     const dispatch=useDispatch();
     useEffect(() => {
         dispatch(fetchFilms());

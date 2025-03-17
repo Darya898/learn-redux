@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 162px;
+    padding: 0 8.43%;
     position: absolute;
     top:0;
     left: 0;
@@ -15,4 +15,51 @@
 }
 .icon img{
     margin-left: 30px;
+}
+
+@media screen and (min-width: 390px){
+    .icon{
+        display: none;
+    }
+    .header {
+        position: absolute;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .logo {
+        width: 116px;
+    }
+}
+@media screen and (min-width: 720px){
+    .icon{
+        display: block;
+    }
+}
+@media screen and (min-width: 1280px){
+    .logo{
+        width: 165px;
+    }
+    .icon img{
+        width: 24px;
+        height: 24px;
+    }
+}
+@media screen and (min-width: 1920px){
+.logo{
+    width: 199px;
+}
+    .icon img{
+        width: 34px;
+        height: 34px;
+    }
+}
+@media screen and (max-width: 389px){
+    .icon{
+        display: none;
+    }
+    .logo{
+        width: 29.7%;
+        min-width: 116px;
+    }
+
 }

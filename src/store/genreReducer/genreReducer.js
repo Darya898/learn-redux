@@ -1,6 +1,7 @@
 import {GET_GENRE, GET_IMG_GENRE} from "./actions.js";
+import {categoriesSectionData} from "../../components/Categories/CategoriesSection/categoriesSectionData.js";
 const initialState={
-    genres:[]
+    genres:[...categoriesSectionData,...categoriesSectionData]
 }
 const genreReducer=(state=initialState,action)=>{
     switch (action.type){
@@ -11,7 +12,6 @@ const genreReducer=(state=initialState,action)=>{
 
             }
         case GET_IMG_GENRE:
-            console.log("action.payload",action.payload)
             return {
                 ...state,
                 genres:[...state.genres.map(film=>({...film,imgs:film.name==action.payload.genre?action.payload.data.map(i=>i.poster.previewUrl):film.imgs}))],

@@ -17,7 +17,7 @@ const QuestionBlock = (props) => {
                         {title}
                     </div>
                     {isActive&&(
-                    <div className={styles['question-data__description']}>
+                    <div className={`${styles['question-data__description']} ${styles['question-data__description-hidden']}`}>
                         {description}
                     </div>)}
                 </div>
@@ -25,6 +25,10 @@ const QuestionBlock = (props) => {
                         {isActive ? <img src={minus}/> :  <img src={plus}/> }
                 </button>
             </div>
+            {isActive&&(
+                <div className={styles['question-data__description-small']}>
+                    {description}
+                </div>)}
             <div className={styles['question-line']}></div>
 
         </div>

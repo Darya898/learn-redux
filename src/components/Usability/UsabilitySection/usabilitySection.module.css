@@ -2,7 +2,7 @@
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 38px;
-    line-height: 150%;
+
     color: var(--absolute-white);
 }
 .usability-heading__description{
@@ -14,7 +14,7 @@
     margin-top: 14px;
 }
 .usability{
-    margin: 150px auto;
+    margin: 150px auto 0;
     max-width: 1597px;
 }
 .usability-content__card-line_top{
@@ -29,4 +29,129 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@media screen and (min-width: 390px){
+    .usability{
+        margin-top: 51px;
+    }
+    .usability-heading__title{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 20px;
+
+        color: var(--absolute-white);
+    }
+    .usability-heading__description{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+
+        color: var(--grey-60);
+        margin-top: 10px;
+    }
+    .usability-content__card-line_top{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .usability-content__card-line_bottom{
+        flex-direction: column;
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 600px) {
+    .usability-content__card-line_top {
+        flex-direction: row;
+    }
+
+    .usability-content__card-line_bottom {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .usability{
+        margin: 120px auto 0;
+        width: 88.9%;
+    }
+    .usability-heading__title {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 28px;
+
+        color: var(--absolute-white);
+    }
+    .usability-heading__description {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+
+        color: var(--grey-60);
+        margin-top: 10px;
+    }
+    .usability-content__card-line_top {
+        margin-top: 60px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .usability{
+        max-width: 1279px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .usability-heading__title{
+        font-weight: 700;
+        font-size: 38px;
+    }
+    .usability-heading__description{
+        font-size: 18px;
+        margin-top: 14px;
+    }
+    .usability{
+        margin: 150px auto 0;
+        max-width: 1597px;
+    }
+    .usability-content__card-line_top{
+        margin-top: 80px;
+    }
+    .usability-content__card-line_bottom{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 389px){
+.usability-heading__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+
+    color: var(--absolute-white);
+}
+    .usability-heading__description{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+
+        color: var(--grey-60);
+        margin-top: 14px;
+    }
+    .usability-heading__description p{
+        display: none;
+    }
+    .usability-content__card-line_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .usability-content__card-line_bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .usability {
+        margin: 51px auto;
+    }
+}
+
 

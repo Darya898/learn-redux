@@ -52,3 +52,25 @@
 .option-disabled{
     color:#ccc
 }
+@media screen and (min-width: 390px) {
+    .btn {
+        border: none;
+        border-radius: 8px;
+        padding: 10px 14px;
+        background: var(--red-45);
+        cursor: pointer;
+        color: #fff;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 389px) {
+    .btn {
+        border: none;
+        border-radius: 8px;
+        padding: 10px 14px;
+        background: var(--red-45);
+        cursor: pointer;
+        color: #fff;
+        font-size: 16px;
+    }
+}

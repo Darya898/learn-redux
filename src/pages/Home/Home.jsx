@@ -16,9 +16,9 @@ const Home = () => {
             <section className={styles['sub-container']}>
                 <h1>The Best Streaming Experience</h1>
                 <div className={styles['sub-description']}>StreamVibe is the best streaming experience for watching your
-                    favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide
+                    favorite movies and shows on demand, anytime, anywhere. <p>With StreamVibe, you can enjoy a wide
                     variety of content, including the latest blockbusters, classic movies, popular TV shows, and more.
-                    You can also create your own watchlists, so you can easily find the content you want to watch.
+                        You can also create your own watchlists, so you can easily find the content you want to watch.</p>
                 </div>
                 <button className={styles['sub-container__btn']}>
                     <img src={arrow} width="17.84" height="19.19px"></img>

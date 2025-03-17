@@ -4,10 +4,12 @@ import QuestionBlock from "../QuestionBlock/QuestionBlock.jsx";
 import {useState} from "react";
 import Modal from "../../../hooks/modalWindow/Modal.jsx";
 import Form from "../../Form/Form.jsx";
+import {useSelector} from "react-redux";
 
 
 const QuestionSection = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const questions=useSelector((state)=>state.question.question);
     return (
         <section className={styles['questions']}>
             <div className={styles['questions-heading']}>
@@ -25,8 +27,8 @@ const QuestionSection = () => {
                 ><span>Ask a Question</span></button>
             </div>
             <div className={styles['questions-content']}>
-                <div>
-                    {dataQuestions.slice(0, 4).map((question) =>
+                <div className={styles['questions-content__wrapper']}>
+                    {questions.slice(0, Math.ceil(questions.length/2)).map((question) =>
                         <QuestionBlock number={question.number}
                                        title={question.title}
                                        description={question.description}
@@ -34,15 +36,14 @@ const QuestionSection = () => {
                         ></QuestionBlock>
                     )}
                 </div>
-                <div>
-                    {dataQuestions.slice(4).map((question) =>
+                <div className={styles['questions-content__wrapper']}>
+                    {questions.slice(Math.ceil(questions.length/2)).map((question) =>
                         <QuestionBlock number={question.number}
                                        title={question.title}
                                        description={question.description}
                                        key={question.number}
                         ></QuestionBlock>
                     )}
-
                 </div>
             </div>
             {isVisible &&

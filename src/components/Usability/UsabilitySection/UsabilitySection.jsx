@@ -10,9 +10,9 @@ const UsabilitySection = () => {
                     We Provide you streaming experience across various devices.
                 </div>
                 <div className={styles['usability-heading__description']}>
-                    With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform
+                    With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere.<p> Our platform
                     is designed to be compatible with a wide range of devices, ensuring that you never miss a moment
-                    of entertainment.
+                    of entertainment.</p>
                 </div>
             </div>
             <div className={styles['usability-content']}>

@@ -79,7 +79,6 @@ const filmReducer=(state=initialState,action)=>{
 
             }
         case SEARCH_MOVIES:
-            console.log("action.payload",action.payload)
             return {
                 ...state,
                 sortFilms:action.payload?[...state.films.filter(i=>i.name.toLowerCase().replace(/\s/g, '').includes(action.payload.toLowerCase().replace(/\s/g, '')))]:[...state.films]

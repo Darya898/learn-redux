@@ -1,4 +1,3 @@
-import React from 'react';
 import icon1 from '../../assets/header-img/fon/1_1.png'
 import icon2 from '../../assets/header-img/fon/1_2.png'
 import icon3 from '../../assets/header-img/fon/1_3.png'
@@ -36,6 +35,7 @@ import icon4_7 from '../../assets/header-img/fon/4_7.png'
 import icon4_8 from '../../assets/header-img/fon/4_8.png'
 import icon4_9 from '../../assets/header-img/fon/4_9.png'
 import central_icon from '../../assets/header-img/central_icon.png'
+import central_icon_sm from '../../assets/header-img/central-icon_sm.png'
 import styles from './headerFon.module.css'
 
 const HeadFon = () => {
@@ -45,49 +45,50 @@ const HeadFon = () => {
             <div className={styles['wrapper-fon__top']}></div>
             <div className={styles['wrapper-fon__bottom']}></div>
             <img className={styles['wrapper-fon__icon']} src={central_icon}></img>
+            <img className={styles['wrapper-fon__icon-sm']} src={central_icon_sm}></img>
             <div className={styles['wrapper-line']}>
-                <img src={icon1} width="195.56px" height="200px"/>
-                <img src={icon2} width="195.56px" height="200px"/>
-                <img src={icon3} width="195.56px" height="200px"/>
-                <img src={icon4} width="195.56px" height="200px"/>
-                <img src={icon5} width="195.56px" height="200px"/>
-                <img src={icon6} width="195.56px" height="200px"/>
-                <img src={icon7} width="195.56px" height="200px"/>
-                <img src={icon8} width="195.56px" height="200px"/>
-                <img src={icon9} width="195.56px" height="200px"/>
+                <img className={styles['wrapper-line__img']} src={icon1}/>
+                <img className={styles['wrapper-line__img']} src={icon2}/>
+                <img className={styles['wrapper-line__img']} src={icon3}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon4}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon5}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon6}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon7}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon8}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon9}/>
             </div>
             <div className={styles['wrapper-line']}>
-                <img src={icon2_1} width="195.56px" height="200px"/>
-                <img src={icon2_2} width="195.56px" height="200px"/>
-                <img src={icon2_3} width="195.56px" height="200px"/>
-                <img src={icon2_4} width="195.56px" height="200px"/>
-                <img src={icon2_5} width="195.56px" height="200px"/>
-                <img src={icon2_6} width="195.56px" height="200px"/>
-                <img src={icon2_7} width="195.56px" height="200px"/>
-                <img src={icon2_8} width="195.56px" height="200px"/>
-                <img src={icon2_9} width="195.56px" height="200px"/>
+                <img className={styles['wrapper-line__img']} src={icon2_1}/>
+                <img className={styles['wrapper-line__img']} src={icon2_2}/>
+                <img className={styles['wrapper-line__img']} src={icon2_3}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon2_4}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon2_5}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon2_6}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon2_7}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon2_8}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon2_9}/>
             </div>
             <div className={styles['wrapper-line']}>
-                <img src={icon3_1} width="195.56px" height="200px"/>
-                <img src={icon3_2} width="195.56px" height="200px"/>
-                <img src={icon3_3} width="195.56px" height="200px"/>
-                <img src={icon3_4} width="195.56px" height="200px"/>
-                <img src={icon3_5} width="195.56px" height="200px"/>
-                <img src={icon3_6} width="195.56px" height="200px"/>
-                <img src={icon3_7} width="195.56px" height="200px"/>
-                <img src={icon3_8} width="195.56px" height="200px"/>
-                <img src={icon3_9} width="195.56px" height="200px"/>
+                <img className={styles['wrapper-line__img']} src={icon3_1}/>
+                <img className={styles['wrapper-line__img']} src={icon3_2}/>
+                <img className={styles['wrapper-line__img']} src={icon3_3}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon3_4}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon3_5}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon3_6}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon3_7}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon3_8}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon3_9}/>
             </div>
-            <div className={styles['wrapper-line']}>
-                <img src={icon4_1} width="195.56px" height="200px"/>
-                <img src={icon4_2} width="195.56px" height="200px"/>
-                <img src={icon4_3} width="195.56px" height="200px"/>
-                <img src={icon4_4} width="195.56px" height="200px"/>
-                <img src={icon4_5} width="195.56px" height="200px"/>
-                <img src={icon4_6} width="195.56px" height="200px"/>
-                <img src={icon4_7} width="195.56px" height="200px"/>
-                <img src={icon4_8} width="195.56px" height="200px"/>
-                <img src={icon4_9} width="195.56px" height="200px"/>
+            <div className={`${styles['wrapper-line']}`}>
+                <img className={styles['wrapper-line__img']} src={icon4_1}/>
+                <img className={styles['wrapper-line__img']} src={icon4_2}/>
+                <img className={styles['wrapper-line__img']} src={icon4_3}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon4_4}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon4_5}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon4_6}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon4_7}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon4_8}/>
+                <img className={`${styles['wrapper-line__img']} ${styles['wrapper-line__img-hidden']}`} src={icon4_9}/>
             </div>
         </div>
     );

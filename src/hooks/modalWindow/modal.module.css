@@ -16,7 +16,38 @@
     padding: 20px;
     color:#fff;
     border-radius: 8px;
-    min-width: 600px;
+
     min-height: 300px;
+    max-width: 600px;
+}
+@media screen and (min-width: 390px) {
+    .modal-content{
+        background: #141414;
+        padding: 8px 18px;
+        color:#fff;
+        border-radius: 6px;
+        width: 90%;
+        min-height: 300px;
+    }
+}
+@media screen and (min-width: 890px) {
+.modal-content {
+    background: #141414;
+    padding: 18px 28px;
+    color: #fff;
+    border-radius: 6px;
+    width: 90%;
+    min-height: 300px;
+}
+}
+@media screen and (max-width: 389px) {
+    .modal-content{
+        background: #141414;
+        padding: 4px 8px;
+        color:#fff;
+        border-radius: 6px;
+        width: 96%;
+        min-height: 300px;
+    }
 
 }
