@@ -5,8 +5,14 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
+  // {env: {
+  //     node: true, // Указывает, что вы работаете в среде Node.js
+  //     es6: true,  // Если вы используете ES6
+  //   }},
   { ignores: ['dist'] },
   {
+
+
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
@@ -23,6 +29,7 @@ export default [
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
+
     rules: {
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
@@ -35,4 +42,5 @@ export default [
       ],
     },
   },
+
 ]
